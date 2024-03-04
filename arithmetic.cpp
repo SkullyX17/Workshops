@@ -103,6 +103,10 @@ int main(){
 	int array2[2] = {1,1};
 	int n1=12;
 	int n2=2;
+
+cout<<binadd(array1,array2,n1,n2)<<endl;
+cout<<binsub(array1,array2,n1,n2)<<endl;
+cout<<binleft(array1,n1)<<endl;
 cout<<binright(array1,n1)<<endl;
 return 0;
 }
