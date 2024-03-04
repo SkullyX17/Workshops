@@ -1,31 +1,37 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
-//turns base 10 to base 2
 
 
-void base2_convert(int input){
-	int base2=1;
-	int power=-1;
-	int number=input;
-	int counter;
-	while(base2<=input){
-		base2=base2*2;
-		power++;
-	}
-counter=power;
-while(power>=0){
-	//cout<<number<<"-"<<pow(2,power)<<endl;
-if (number>=pow(2,power)){
-	cout<<1<<endl;
-	number=number-pow(2,power);
-	power--;
-	counter--;
-}else {
-	cout<<0<<endl;
-	power--;
-	//number=number-pow(2,power-1);
-	counter--;
+ void arithmetic(int array[], int array2[],char oppor){
+
+
+switch(oppor){
+case 'add':
+
+	break;
+
+case 'subtract':
+
+	break;
+
+case "left":
+
+	break;
+
+case "right":
+
+	break;
 }
-}
-}
+
+
+ }
+
+ int main(){
+
+ 	int array[12] = {1,1,1,0,1,1,1,0,1,0,1,1};
+ 	int array2[2] = {1,1};
+ 	char oppor = 'add';
+
+ 	arithmetic(array,array2,oppor);
+ return 0;
+ }

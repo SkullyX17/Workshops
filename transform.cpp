@@ -18,14 +18,11 @@ void base2_convert(int input){
 	int array[n];
 		for(int i=0;i < n; i++){
 			if (number>=pow(2,power)){			//formula for convert
-				//cout<<1<<endl;
 				array[i]=1;
-
 				number=number-pow(2,power);
 				power--;
 				
 			}else {
-				//cout<<0<<endl;
 				array[i]=0;
 				power--;
 			}
