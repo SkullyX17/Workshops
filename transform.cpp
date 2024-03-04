@@ -13,15 +13,29 @@ void base2_convert(int input){
 		base2=base2*2;
 		power++;
 	}
-		while(power>=0){
+
+	int n=power+1; // i need the correct amount of loops
+	int array[n];
+		for(int i=0;i < n; i++){
 			if (number>=pow(2,power)){			//formula for convert
-				cout<<1<<endl;
+				//cout<<1<<endl;
+				array[i]=1;
+
 				number=number-pow(2,power);
 				power--;
 				
 			}else {
-				cout<<0<<endl;
+				//cout<<0<<endl;
+				array[i]=0;
 				power--;
 			}
+		cout<<array[i];
 		}
+cout<<endl;
+}
+
+int main (){
+int input = 5;
+base2_convert(input);
+	return 0;
 }
