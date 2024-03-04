@@ -6,33 +6,21 @@ int binleft(int array[],int n){
 int newarray[n];
 newarray[0]=array[n-1];
 int total=0;
-//cout<<newarray[0]<<endl;
+
 	for (int i =0; i < n; i++){
 
 		newarray[i+1]=array[i];
 
-		cout<<newarray[i]<<' ';
-
-		//if(newarray[n-i-1]==1){
-		//total=total+pow(2,i);
-
-		//}
 	}
 	for (int i=0; i < n; i++){
 				if (newarray[n-i-1]==1){
 				total=total+pow(2,i);
-				cout<<total<<endl;
 			
 		}
 	}
-	cout<<endl;
 	
 return total;	
 }
-
-
-
-
 
 int binright(int array[],int n){
 int newarray[n];
@@ -62,7 +50,6 @@ int total;
 
 		}
 	}
-	//cout<<sum1<<endl;
 	for (int i=0; i < n2; i++){
 			if (arrayB[n-i-1]==1){
 			sum2=sum2+pow(2,i);
@@ -84,19 +71,15 @@ int binadd(int arrayA[],int arrayB[],int n,int n2){
 
 		}
 	}
-	//cout<<sum1<<endl;
-	for (int i=0; i < n2; i++){
+		for (int i=0; i < n2; i++){
 			if (arrayB[n-i-1]==1){
 			sum2=sum2+pow(2,i);	
-			}
+		}
 	}
 
 total=sum1+sum2;
 return total;
 }
-
-
-
 
 int main(){
 	int array1[12] = {1,1,1,0,1,1,1,0,1,0,1,1};
