@@ -1,29 +1,23 @@
 #include<iostream>
-using namespace std, Musician;
+using namespace std;
 #include "Musician.h"
-class Musician
-{
-private:
-	string instrument_name;
-	int XPyears;
-public: 
-Musician()
+
+Musician::Musician()
 	{
 		instrument_name = "null";
 		XPyears = 0;
 	}
-Musician(std::string instrument, int experience)
+Musician::Musician(std::string instrument, int experience)
 	{
 		instrument_name = instrument;
 		XPyears = experience;
 	}
 
-string get_instrument()
+string Musician::get_instrument()
 	{
 		return instrument_name;
 	}
-int get_experience()
+int Musician::get_experience()
 	{
 		return XPyears;
 	}
-}
