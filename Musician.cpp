@@ -1,5 +1,5 @@
 #include<iostream>
-using namespace std;
+
 #include "Musician.h"
 
 Musician::Musician()
@@ -13,7 +13,7 @@ Musician::Musician(std::string instrument, int experience)
 		XPyears = experience;
 	}
 
-string Musician::get_instrument()
+std::string Musician::get_instrument()
 	{
 		return instrument_name;
 	}
