@@ -3,12 +3,12 @@
 
 class Musician{
 private:
-	string instrument_name;
+	std::string instrument_name;
 	int XPyears;
 public: 
 Musician();
-Musician(string intrument, int experience);
-string get_instrument();
+Musician(std::string instrument, int experience);
+std::string get_instrument();
 int get_experience();
 
 
