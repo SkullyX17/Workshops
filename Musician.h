@@ -7,7 +7,7 @@ private:
 	int XPyears;
 public: 
 Musician();
-Musician(std::string intrument, int ecperience);
+Musician(std::string intrument, int experience);
 std::string get_instrument();
 int get_experience();
 
